@@ -94,8 +94,90 @@ section {
     font-weight: 600
 }
 
+.vdcLogo {
+    background: #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -35%;
+    z-index: 1;
+    height: 6rem
+}
+
+.vdcLogo img {
+    position: relative;
+    top: 65%;
+    width: 31%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%)
+}
+
+.banner .btn:nth-of-type(2) {
+    margin-left: .75rem
+}
+
+.keyfeaturesTable td {
+    width: 33%
+}
+
+.card.featuresCard {
+    height: calc(100%);
+    position: relative;
+    overflow: hidden;
+    background: url(https://vcdev.videocrypt.com/assets/img/lp-images/card-2bg.png);
+    background-size: 100% 100%;
+    background-position: top 0 center;
+    background-repeat: no-repeat
+}
+
+.card.featuresCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #aec5f336
+}
+
+.featuresCard .card-title {
+    font-weight: 700;
+    padding: .5rem;
+    visibility: hidden;
+    margin-bottom: 0
+}
+
+.featuresCard li {
+    position: relative;
+    list-style: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 1px solid #dfcece;
+    line-height: 1.2;
+    width: 100%;
+    padding: .5rem
+}
+
+.activeFeaturesCard {
+    background-image: url(https://vcdev.videocrypt.com/assets/img/lp-images/card-1bg.png) !important
+}
+
+.table>:not(caption)>*>* {
+    background: unset
+}
+
 .theme-ul {
     margin: 1rem 0
+}
+
+button.btn-close {
+    position: absolute;
+    right: 2%;
+    top: 2%
 }
 
 .theme-list {
@@ -132,13 +214,113 @@ section {
     background-size: 100% 100%
 }
 
+.keyfeatures {
+    margin-top: 3rem;
+    border-radius: .5rem;
+    background: #f8f9fa
+}
+
+.company-features img,
+.company-features svg {
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.features h4 {
+    height: 2rem
+}
+
+.company-features~h4,
+.company-features~h6 {
+    padding: 0 1rem
+}
+
+.company-features {
+    text-align: center
+}
+
+.keyfeatures {
+    display: flex;
+    width: 100%;
+    border: 2px solid #ffad00
+}
+
+.keyfeaturesTable th {
+    font-size: 1.5rem
+}
+
+.keyfeaturesTable thead tr {
+    background: #dae4ed !important
+}
+
+.keyfeaturesTable tr {
+    border-color: #bdbdbd
+}
+
+.keyfeaturesTable tr:nth-child(even) {
+    background: #f1eae2
+}
+
+table.table.keyfeaturesTable {
+    border: 1px solid #bdbdbd
+}
+
+.innerWrapper {
+    width: 33%;
+    padding: 1rem 0
+}
+
+.features {
+    padding: 1rem;
+    text-align: center
+}
+
+.features h6 {
+    line-height: 1.5
+}
+
+.features h6 {
+    margin: 1rem 0
+}
+
 .subheading {
     font-weight: 600;
     font-size: 36px
 }
 
+.subheading~li,
+.subheading~p {
+    font-weight: 500;
+    font-size: 18px
+}
+
+.accordion-button:focus {
+    box-shadow: unset
+}
+
+.border-primary {
+    border: 2px solid var(--primary-btn-clr) !important
+}
+
 button.accordion-button.collapsed {
     background: #f5f5f5
+}
+
+.accordion-button:not(.collapsed) {
+    background: #ebeaea
+}
+
+.accordion-button:not(.collapsed) h6 {
+    color: var(--primary-btn-clr);
+}
+
+.featuresCard li:last-child {
+    border-bottom: 0
 }
 
 .inputContainer {
@@ -171,11 +353,34 @@ ul.compList .theme-list::marker {
     top: 12%
 }
 
+.activeFeaturesCard .vdcLogo img {
+    width: 42%;
+    left: 63%
+}
+
 textarea.form-control {
     min-height: calc(1.5em + .75rem + calc(var(--bs-border-width) * 2));
     height: 130px;
     resize: none;
     margin-bottom: 2rem
+}
+
+.keyFeatures {
+    position: relative
+}
+
+.CtaCdcLP {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.skitcy-top {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background:#fff!important;
 }
 
 #btnBkTop {
@@ -227,6 +432,9 @@ section.fixed-bar {
     transform-style: preserve-3d;
     box-shadow: 0 0 5px 5px #ddd4d459;
 }
+.flipCard:hover .card-content{
+    transform: rotateY(180deg);
+}
 .flipCardFront, .flipCardBack{
     position: absolute;
     width: 100%;
@@ -266,6 +474,9 @@ section.fixed-bar {
     place-items: center;
     height: 100%;
 }
+.appsquadz-item-icon {
+    width: 50px;
+}
 .appsquadz-item-card {
     box-shadow: 0 0 2px 4px #ffffff36;
     padding: 1rem;
@@ -287,6 +498,11 @@ section.fixed-bar {
 }
 .form input,.form textarea{
     background: #ededed;
+}
+.form input:focus, .form textarea:focus{
+    background: #ededed;
+    box-shadow: none;
+    border: 1px solid #ededed;
 }
 @media screen and (orientation:portrait) and (min-width:360px) and (max-width:767px) {
     section {
