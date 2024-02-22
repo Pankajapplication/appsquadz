@@ -32,7 +32,7 @@ section {
 .error {
     color:var(--red-clr);
 }
-.navbar,.banner{
+.navbar,.banner,.fixed-bar{
     margin:0px;
 }
 
@@ -40,6 +40,9 @@ section {
 .bg-dark,
 .banner{
     padding:40px 0;
+}
+.aws_images.bg-light {
+    padding: 0;
 }
 .bg-dark,
 .banner{
@@ -56,13 +59,16 @@ section {
 
 .theme-title h3 {
     font-size: 40px;
-    font-weight: 400
+    font-weight: 400;
+    margin:0 0 2rem;
 }
 
 .text-primary {
     color: var(--primary-clr) !important
 }
-
+#bannerBtn{
+    margin:1rem 0 0;
+}
 .theme-title h3 {
     position: relative
 }
@@ -162,7 +168,7 @@ section {
 }
 .ul-5-girid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     position: relative;
 }
@@ -301,7 +307,6 @@ section.fixed-bar {
     font-weight: 600;
 }
 .flipCardBack {
-    /* background-color: #7c7e83; */
     color: white;
     width: 100%;
     height: 100%;
@@ -354,7 +359,7 @@ section.fixed-bar {
     border-radius: .5rem;
 }
 .app-development-wrapper{
-    width: 400px;
+    width: 580px;
     height: auto;
     margin: 1rem  auto;
     display: block;
@@ -392,254 +397,39 @@ section.fixed-bar {
     border-radius: 50%;
     margin-bottom: 1rem;
 }
-@media screen and (orientation:portrait) and (min-width:360px) and (max-width:767px) {
-    section {
-        padding: 1.5rem .5rem
-    }
-
-    .mainHeading {
-        font-size: 30px
+@media screen and (min-width:360px) and (max-width:767px){
+    .theme-title h3 {
+        font-size: 30px;
+        margin: 0 0 1rem;
     }
     .appsquadz-item-container{
         grid-template-columns:repeat(2, 1fr);
     }
-    .ul-5-girid {
-        grid-template-columns:repeat(1, 1fr);
+    .awardbadges{
+        grid-template-columns:repeat(2, 1fr);
+        row-gap:1rem;
     }
-    .btn-primary {
-        font-size: 18px;
-        padding: .3rem .5rem
+    .wrapper-7-girid{
+        grid-template-columns:repeat(3, 1fr);
+        row-gap:1.5rem;
     }
-
-    .theme-title h3 {
-        font-size: 25px
+    .innerImageGrid{
+        padding:1.5rem;
     }
-
-    .subheading {
-        font-size: 25px
-    }
-
-    .theme-list::before {
-        top: 5%
-    }
-
-    .card-mob-margin {
-        margin-top: 1rem
-    }
-
-    .theme-title {
-        padding: 1rem
-    }
-
-    .col-mob-reverse {
-        flex-direction: column-reverse
-    }
-
-    .col-mob-reverse img {
-        margin-bottom: 1rem
-    }
-
-    .vdcLogo {
-        left: -30%
-    }
-
-    #navbarSupportedContent .nav-item {
-        margin-left: 0 !important
-    }
-
-    #navbarSupportedContent .nav-item .nav-link {
-        margin-top: .5rem
-    }
-
-    .CtaCdcLP {
-        position: unset;
-        margin-top: 1rem
-    }
-
-    .navbar-toggler {
-        background: #fff;
-        display: none
-    }
-    .theme-title p {
-        font-size: 17px;
-    }
-    .fixed-bar-content {
-        display: block
-    }
-    .accordion-button h6 {
-        font-size: 18px;
-    }
-    .btn-primary, a, li, p, td {
+    .gadget-title {
         font-size: 16px;
     }
-}
-
-@media screen and (orientation:landscape) and (min-width:360px) and (max-width:767px) {
-
-    .activeFeaturesCard,
-    .banner .btn {
-        margin-bottom: 1rem
+    .customerCards {
+        margin-bottom: 1.5rem;
     }
-
-    .vdcLogo {
-        left: -20%
+    .footer{
+        margin: 0;
     }
-
-    .featuresCard {
-        height: unset !important
+    .app-development-wrapper{
+        width:360px;
+        margin:0rem  auto 1rem;
     }
-
-    .featuresCard .vdcLogo img {
-        left: 60%
-    }
-
-    .activeFeaturesCard .vdcLogo img {
-        left: 60%
-    }
-
-    .theme-title h3 {
-        font-size: 30px
-    }
-
-    section {
-        padding: 2rem
-    }
-
-    .col-mob-reverse {
-        flex-direction: column-reverse
-    }
-
-    .col-mob-reverse img {
-        margin-bottom: 1rem
-    }
-}
-
-@media screen and (orientation:portrait) and (min-width:414px) and (max-width:767px) {
-    .vdcLogo {
-        left: -25%
-    }
-
-    .vdcLogo img {
-        left: 58%
-    }
-
-    .theme-title h3 {
-        font-size: 30px
-    }
-}
-
-@media screen and (orientation:portrait) and (min-width:768px) and (max-width:1023px) {
-    .card-tab-margin {
-        margin-top: 1rem
-    }
-
-    .md-img-ca {
-        display: block;
-        margin: auto;
-        margin-bottom: 1rem
-    }
-
-    .col-mob-reverse {
-        flex-direction: column-reverse
-    }
-
-    .featuresCard .vdcLogo img {
-        width: 35%;
-        left: 60%
-    }
-}
-
-@media screen and (min-width:1024px) and (max-width:1180px) {
-    .vdcLogo {
-        left: -60%
-    }
-
-    .activeFeaturesCard .vdcLogo img {
-        width: 32%;
-        left: 69%
-    }
-
-    .featuresCard li {
-        font-size: 10px
-    }
-
-    section {
-        padding: 3rem
-    }
-}
-
-@media screen and (min-width:1200px) and (max-width:1259px) {
-    .vdcLogo {
-        left: -54%
-    }
-    section{
-        padding: 2rem;
-    }
-    .vdcLogo img {
-        width: 32% !important;
-        top: 70%;
-        left: 68%
-    }
-
-    .activeFeaturesCard .vdcLogo img {
-        width: 35% !important;
-        left: 68%
-    }
-
-    .featuresCard li {
-        font-size: 13px
-    }
-
-    textarea.form-control {
-        height: 70px
-    }
-}
-
-@media screen and (min-width:1260px) and (max-width:1299px) {
-    .vdcLogo {
-        left: -48%
-    }
-
-    .featuresCard li {
-        font-size: 13px;
-        padding: .5rem 0
-    }
-
-    .vdcLogo img {
-        top: 73%;
-        width: 35%;
-        left: 66%
-    }
-
-    .activeFeaturesCard .vdcLogo img {
-        left: 66%
-    }
-
-    textarea.form-control {
-        height: 70px
-    }
-}
-
-@media screen and (min-width:1300px) and (max-width:1399px) {
-    .vdcLogo {
-        left: -48%
-    }
-
-    .vdcLogo img {
-        width: 32% !important;
-        top: 70%;
-        left: 68%
-    }
-
-    .activeFeaturesCard .vdcLogo img {
-        width: 33% !important
-    }
-
-    .featuresCard li {
-        font-size: 13px
-    }
-
-    textarea.form-control {
-        height: 70px
+    .appsquadz-item-card{
+        border-right:0;
     }
 }
