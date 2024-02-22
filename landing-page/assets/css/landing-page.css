@@ -331,6 +331,7 @@ section.fixed-bar {
 .gadget-title {
     font-size: 28px;
     text-align: center;
+    font-family: "Roboto", sans-serif;
 }
 .appsquadz-item-card img {
     width: 90px;
@@ -391,11 +392,17 @@ section.fixed-bar {
 .customerCards {
     text-align: center;
 }
+.customerCards h4{
+    font-family: "Roboto", sans-serif;
+}
 .customerCards img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+.footer{
+    margin:0;
 }
 @media screen and (min-width:360px) and (max-width:767px){
     .theme-title h3 {
