@@ -75,10 +75,6 @@ section {
     padding: .5rem 1rem !important
 }
 
-.banner p:nth-of-type(1) {
-    font-size: 24px
-}
-
 .theme-title p {
     font-size: 20px
 }
@@ -102,28 +98,39 @@ section {
 .theme-list {
     list-style-type: unset;
     position: relative;
-    padding-left: 2rem;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 17px;
+    background: white;
+    color: #003c78;
+    padding: .75rem;
+    box-shadow: 0 0 10px 3px #0000000f;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .theme-list span {
     display: block;
     position: relative;
     padding-left: 1.5rem;
+    font-size: 15px;
+    font-weight: 400;
 }
 .theme-list span::before {
-    content: '-';
+    content: '';
     position: absolute;
     left: 0.5rem;
+    top: .35rem;
+    width: 10px;
+    height: 10px;
+    background: #003973;
+    border-radius: 50%;
 }
 .ul-5-girid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     position: relative;
 }
 .ul-5-girid::after {
-    content: '';
     position: absolute;
     border-left: 1px solid #00498c;
     top: 5px;
@@ -135,7 +142,6 @@ section {
     top:0;
 }
 .theme-list::before {
-    content: '';
     position: absolute;
     left: 0;
     top: 4%;
@@ -199,9 +205,18 @@ textarea.form-control {
     position: fixed;
     width: 100%;
     z-index: 999;
-    background:#fff!important;
+    background: #fff!important;
+    box-shadow: 0 0 10px 5px #00000014;
+}
+.innerContentWrapper h4 {
+    color: #004a8d;
+    font-size: 18px;
 }
 
+.innerContentWrapper p {
+    color: #004a8d;
+    font-size: 16px;
+}
 #btnBkTop {
     box-shadow: none;
     position: fixed;
@@ -238,9 +253,7 @@ section.fixed-bar {
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
     transition: transform 0.9s;
-    box-shadow: 0 0 5px 5px #ddd4d459;
 }
 
 .flipCardFront img{
@@ -252,7 +265,7 @@ section.fixed-bar {
     font-weight: 600;
 }
 .flipCardBack {
-    background-color: #7c7e83;
+    /* background-color: #7c7e83; */
     color: white;
     width: 100%;
     height: 100%;
@@ -293,7 +306,7 @@ section.fixed-bar {
     box-shadow: none;
     border: 1px solid #ededed;
 }
-.card.flipCard {
+.flipCard {
     height: calc(100%);
     position: relative;
     margin: 0.75rem 0;
