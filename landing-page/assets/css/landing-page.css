@@ -285,11 +285,13 @@ section.fixed-bar {
     position: relative;
     margin: 0.75rem 0;
 }
-
 .innerContentWrapper {
     position: absolute;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
+    right: 0;
+    padding: 1rem;
 }
 @media screen and (orientation:portrait) and (min-width:360px) and (max-width:767px) {
     section {
