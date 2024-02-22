@@ -7,7 +7,7 @@ h4,
 h5,
 h6,
 html h1 {
-    font-family: poppins, sans-serif
+    font-family: poppins, sans-serif;
 }
 
 .btn-primary,
@@ -15,7 +15,7 @@ a,
 li,
 p,
 td {
-    font-family: Montserrat, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     margin-bottom: 0;
 }
@@ -152,7 +152,7 @@ section {
     top: 0.35rem;
     width: 12px;
     height: 12px;
-    background: #ffffff;
+    background: #003c78;
     border-radius: 50%;
 }
 .appsquadz-item-card:last-child {
@@ -409,6 +409,9 @@ section.fixed-bar {
         grid-template-columns:repeat(2, 1fr);
         row-gap:1rem;
     }
+    .ul-5-girid{
+        grid-template-columns:repeat(1, 1fr);
+    }
     .wrapper-7-girid{
         grid-template-columns:repeat(3, 1fr);
         row-gap:1.5rem;
@@ -432,4 +435,14 @@ section.fixed-bar {
     .appsquadz-item-card{
         border-right:0;
     }
+    .form{
+        width:100%;
+        margin:1.75rem 0;
+    }
+    .inputContainer,#submit {
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+    
 }
