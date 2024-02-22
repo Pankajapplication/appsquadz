@@ -25,19 +25,30 @@ td {
 }
 
 section {
-    padding: 3rem 0rem;
+    padding: 0px;
+    margin: 40px 0px;
 }
 
 .error {
     color:var(--red-clr);
 }
+.navbar,.banner{
+    margin:0px;
+}
+
+.bg-light,
 .bg-dark,
-.banner,
-.bg-dark {
+.banner{
+    padding:40px 0;
+}
+.bg-dark,
+.banner{
     background: linear-gradient(to left, #004e92, #000428)!important;
     color:#fff;
 }
-
+.navbar {
+    padding: 0.5rem;
+}
 .theme-title {
     text-align: center;
     padding: 0 1rem 1rem 1rem
@@ -367,6 +378,19 @@ section.fixed-bar {
     margin: auto;
     box-shadow: 0 0 5px 5px #0000001a;
     border-radius: 10px;
+}
+.wrapper-7-girid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.customerCards {
+    text-align: center;
+}
+.customerCards img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 @media screen and (orientation:portrait) and (min-width:360px) and (max-width:767px) {
     section {
