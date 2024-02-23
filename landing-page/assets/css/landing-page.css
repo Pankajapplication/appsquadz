@@ -628,10 +628,11 @@ section.fixed-bar {
     }
 
     .ul-5-girid .theme-list span::before {
-        width: 8px;
-        height: 8px;
-        background: #003973;
-        top: 0.4rem;
+        width: 6px;
+        height: 6px;
+        background: rgb(0, 57, 115);
+        top: 0.5rem;
+        left: 0.75rem;
     }
     .gadget-title{
         font-size:25px;
@@ -642,6 +643,8 @@ section.fixed-bar {
     }
     .theme-list span::before{
         width:8px;
-        height:8px ;
+        height:8px;
+        top:.5rem;
+        left:.65rem;
     }
 }
