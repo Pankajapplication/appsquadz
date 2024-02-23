@@ -420,7 +420,9 @@ section.fixed-bar {
 .text-primary{
     color:#004e92!important;
 }
-
+.navbar-toggler{
+    display:none;
+}
 @media screen and (orientation:portrait) and (min-width:360px) and (max-width:767px){
     .mainHeading{
         font-size: 30px;
@@ -617,9 +619,6 @@ section.fixed-bar {
     }
     .theme-title h3{
         font-size:35px;
-    }
-    .navbar-toggler{
-        display:none;
     }
 }
 @media screen and (min-width:1200px) and (max-width:1300px) {
