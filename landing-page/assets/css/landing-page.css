@@ -642,6 +642,6 @@ section.fixed-bar {
     }
     .theme-list span::before{
         width:8px;
-        height:8px;
+        height:8px ;
     }
 }
