@@ -162,8 +162,9 @@ section {
     margin-left: 2rem;
 }
 .ul-5-girid  .theme-list span::before {
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
+    left:.85rem;
     background: #003973;
 }
 .ul-5-girid {
