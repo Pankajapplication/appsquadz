@@ -640,4 +640,8 @@ section.fixed-bar {
         display: flex;
         align-items: center;
     }
+    .theme-list span::before{
+        width:8px;
+        height:8px;
+    }
 }
