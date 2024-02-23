@@ -622,7 +622,7 @@ section.fixed-bar {
         display:none;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1200px) {
+@media screen and (min-width:1200px) and (max-width:1300px) {
     .app-development-wrapper{
         width:480px;
     }
