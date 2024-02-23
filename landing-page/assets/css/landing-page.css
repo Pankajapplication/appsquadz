@@ -626,4 +626,18 @@ section.fixed-bar {
     .app-development-wrapper{
         width:480px;
     }
+
+    .ul-5-girid .theme-list span::before {
+        width: 8px;
+        height: 8px;
+        background: #003973;
+        top: 0.4rem;
+    }
+    .gadget-title{
+        font-size:25px;
+    }
+    .appsquadz-item-card {
+        display: flex;
+        align-items: center;
+    }
 }
