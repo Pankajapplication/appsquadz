@@ -149,9 +149,9 @@ section {
     content: '';
     position: absolute;
     left: 0.5rem;
-    top: 0.35rem;
-    width: 12px;
-    height: 12px;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
     background: #003c78;
     border-radius: 50%;
 }
@@ -423,7 +423,7 @@ section.fixed-bar {
 .navbar-toggler{
     display:none;
 }
-@media screen and (orientation:portrait) and (min-width:360px) and (max-width:767px){
+@media screen and (min-width:360px) and (max-width:767px){
     .mainHeading{
         font-size: 30px;
     }
@@ -478,9 +478,10 @@ section.fixed-bar {
         display: block;
     }
     .theme-list span::before{
-        width:8px;
-        height:8px;
-        top:0.5rem;
+        width: 6px!important;
+        height: 6px!important;
+        top: 0.5rem;
+        left: 0.85rem;
     }
     .navbar-toggler{
         display:none;
