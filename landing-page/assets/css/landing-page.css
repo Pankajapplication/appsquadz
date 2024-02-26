@@ -108,9 +108,6 @@ section {
     font-weight: 600
 }
 
-.theme-ul {
-    margin: 1rem 0
-}
 .theme-list {
     list-style-type: unset;
     position: relative;
