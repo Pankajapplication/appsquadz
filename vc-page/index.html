@@ -3,57 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caousel Work</title>
+    <title>Owl Carousel Animated</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        .carouselWrapper{
+            width: 100%;
+            color: #fff;
+        }
+        .itemCarousel{
+            position: relative;
+            height: 100%;
+        }
+        .rowabs{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            width: 100%;
+        }
+        .rowabs h1{
+            font-size: 46px;
+        }
+        .rowabs p{
+            font-size: 20px;
+        }
+        .rowabs .btn {
+            background: #fff;
+            color: #001135;
+            border: 1px solid #fff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    </style>
 </head>
 <body>
-    <div class="carouselWrapper">
-        <div class="owl-carousel" id="carouselBanner">
-            <div class="item">
-                <img src="assets/images/banner-1.png" alt="" class="img-fluid">
-            </div>
-            <div class="item">
-                <img src="assets/images/banner-2.png" alt="" class="img-fluid">
-            </div>
-            <div class="item">
-                <img src="assets/images/banner-3.png" alt="" class="img-fluid">
+    <section>
+        <div class="carouselWrapper" style="height:400px;">
+            <div class="owl-carousel">
+                <div class="item itemCarousel">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="banner.png">
+                        <source media="(min-width:768px)" srcset="banner.png">
+                        <source media="(min-width:360px)" srcset="banner-mob.png">
+                        <img src="banner.png" alt="Flowers" style="width:100%;">
+                    </picture>
+                </div>
+                <div class="item itemCarousel">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="banner-2.png">
+                        <source media="(min-width:768px)" srcset="banner-2.png">
+                        <source media="(min-width:360px)" srcset="banner-2-mob.png">
+                        <img src="banner-2.png" alt="eventBanner" class="img-fluid">
+                    </picture>
+                    <div class="container-fluid">
+                        <div class="row align-items-center rowabs">
+                            <div class="col-lg-12">
+                                <h1>Asia-tech x Singapore</h1>
+                                <p>29-31 May 2024 | Expo Drive, Singapore 486150</p>
+                                <a href="#learn-more" class="btn btn-primary">Schedule a Meet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="https://vcdev.videocrypt.com/website_assets/js/jquery.min.js"></script>
+    </section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ipsum at nemo temporibus natus odio facilis repudiandae similique, laborum perspiciatis tempore optio ipsam cumque ipsa! Maxime aperiam ducimus assumenda vitae aliquam amet iusto rerum ipsum quaerat praesentium fugiat voluptate ut consequatur vero, excepturi iure quia adipisci facere aliquid. At nesciunt labore rem nobis ullam provident voluptate repudiandae dignissimos commodi culpa laborum quasi nisi, vero praesentium esse, amet harum iusto atque! Quos ipsam eveniet eos? Consectetur obcaecati, iure expedita laudantium esse, earum possimus illum perferendis placeat fuga nemo mollitia. Ut voluptatibus alias laborum. Possimus obcaecati error molestiae consectetur distinctio consequatur repellat ipsam rem fuga doloribus esse voluptatem autem, amet nisi, aut qui, iste numquam ut repellendus molestias nihil vel. Quam voluptate impedit commodi optio temporibus repudiandae dicta, quos tenetur officia corrupti vitae nemo eligendi necessitatibus omnis placeat earum dolore eum laboriosam ipsa nam debitis, qui doloribus. Fugiat, asperiores maxime cum neque corporis, deserunt odio saepe dolorem libero quas est ducimus? Perspiciatis, praesentium placeat, quod error commodi laboriosam quidem nostrum aut nam laborum, incidunt reiciendis sed odio repellat laudantium deserunt alias? Libero eos est dolores eligendi, nostrum quod? Commodi, ratione veniam natus minus esse aliquid laboriosam, nesciunt nam, numquam libero exercitationem? Itaque totam libero amet a laudantium repellat at excepturi tempora voluptas dicta. Aperiam obcaecati perferendis iure atque expedita qui sunt voluptatibus sequi rerum quam odio, provident et, nostrum quo accusamus sit beatae facilis quasi aspernatur eum numquam itaque totam ex? Ea cupiditate nihil, aspernatur quibusdam maiores, cum hic eligendi repellat reiciendis nam, earum explicabo ab ex provident corporis quam quisquam quasi tempore magnam nisi rerum deleniti possimus ipsa deserunt. Voluptas, dolorum tempore, commodi fuga dolor excepturi aliquam deserunt, ducimus minus perspiciatis totam? Natus recusandae ex animi culpa rerum tempora possimus quo accusantium, laboriosam officiis. Perferendis amet pariatur ad. Modi, pariatur cumque.</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="assets/js/carousel.js"></script>
-<script>
-     //Alternate Direction
- $(document).ready(function() {
-    let owl1 = $('#carouselBanner');
-    owl1.owlCarousel({
-        items:1,
-        margin:200,
-        loop:true,
-        nav:true,
-        dots:false,
-        margin: 0,
-        responsiveClass:true,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause: true,
-        animateOut:'slideOutDown',
-        animateIn:'flipInX',
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-});
-</script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                nav: false,
+                margin: 0,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    767: {
+                        items: 1,
+                    },
+                    768: {
+                        items: 1,
+                    },
+                    1024: {
+                        items: 1
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
